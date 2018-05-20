@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.vigilis.controllers.delete.DeleteController">
+    <content>
+        <VBox alignment="CENTER">
+            <HBox alignment="CENTER">
+                <Label text="KBO-Nummer:" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="kbo" alignment="CENTER" onAction="#deleteByKbo" />
+            <VBox.margin>
+               <Insets top="40.0" />
+            </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#deleteByKbo" style="-fx-background-radius: 10; -fx-background-color: Red;" text="Verwijder">
+                <VBox.margin>
+                    <Insets top="50.0" />
+                </VBox.margin>
+            <font>
+               <Font size="15.0" />
+            </font>
+            </Button>
+        </VBox>
+    </content>
+</DialogPane>

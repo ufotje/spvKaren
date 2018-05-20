@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <bottom>
+        <VBox alignment="CENTER"
+              style="-fx-background-color: #A9CCE3; -fx-background-radius: 10; -fx-alignment: center;"
+              BorderPane.alignment="CENTER">
+            <effect>
+                <Glow/>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+            <Label style="-fx-font-weight: Bold;" text="©2018"/>
+            <Label style="-fx-font-weight: Bold;" text="Designed &amp; Programmed by Demesmaecker Daniel">
+                <graphic>
+                    <Label/>
+                </graphic>
+            </Label>
+            <padding>
+                <Insets bottom="5.0" top="5.0"/>
+            </padding>
+        </VBox>
+    </bottom>
+</BorderPane>

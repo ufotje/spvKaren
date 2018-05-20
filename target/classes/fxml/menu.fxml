@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.vigilis.controllers.MenuController">
+    <top>
+        <MenuBar style="-fx-background-color: #85C1E9; -fx-background-radius: 10; -fx-alignment: center; "
+                 BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="Update">
+                <MenuItem mnemonicParsing="false"  text="Op Naam" onAction="#updateByName"/>
+                <MenuItem mnemonicParsing="false" text="Op KBO-Nummer" onAction="#updateByKbo"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Verwijder">
+                <MenuItem mnemonicParsing="false"  text="Op Naam" onAction="#deleteByName"/>
+                <MenuItem mnemonicParsing="false" text="Op KBO-Nummer" onAction="#deleteByKbo"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+</BorderPane>
