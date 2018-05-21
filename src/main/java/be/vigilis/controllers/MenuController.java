@@ -22,6 +22,7 @@ public class MenuController {
         stage.show();
     }
 
+
     @FXML
     private void deleteByName() {
         stage = NewStage.getStage("Verwijder een record!", "/fxm/delete/deleteByNameDialog.fxml");
@@ -31,6 +32,37 @@ public class MenuController {
     @FXML
     private void deleteByKbo() {
         stage = NewStage.getStage("Verwijder een record!", "/fxml/delete/deleteByKboDialog.fxml");
+        stage.show();
+    }
+
+
+    @FXML
+    private void searchByKboName() {
+        stage = NewStage.getStage("Zoek een record op naam!", "/fxml/search/dialogs/searchByKboNameDialog.fxml");
+        stage.show();
+    }
+
+    @FXML
+    private void searchByKboNr() {
+        stage = NewStage.getStage("Zoek een record op KBO-Nr!", "/fxml/search/dialogs/searchByKboNrDialog.fxml");
+        stage.show();
+    }
+
+    @FXML
+    private void searchByCity() {
+        stage = NewStage.getStage("Zoek een record op Stad!", "/fxml/search/dialogs/searchByCityDialog.fxml");
+        stage.show();
+    }
+
+    @FXML
+    private void searchByType() {
+        stage = NewStage.getStage("Zoek een record op Type Aanvraag!", "/fxml/search/dialogs/searchByTypeDialog.fxml");
+        stage.show();
+    }
+
+    @FXML
+    private void searchByState() {
+        stage = NewStage.getStage("Zoek een record op Status Aanvraag!", "/fxml/search/dialogs/searchByStateDialog.fxml");
         stage.show();
     }
 }

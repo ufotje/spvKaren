@@ -19,6 +19,13 @@
                 <MenuItem mnemonicParsing="false"  text="Op Naam" onAction="#deleteByName"/>
                 <MenuItem mnemonicParsing="false" text="Op KBO-Nummer" onAction="#deleteByKbo"/>
             </Menu>
+            <Menu mnemonicParsing="false" text="Zoeken">
+                <MenuItem mnemonicParsing="false"  text="Op Naam" onAction="#searchByKboName"/>
+                <MenuItem mnemonicParsing="false" text="Op KBO-Nummer" onAction="#searchByKboNr"/>
+                <MenuItem mnemonicParsing="false" text="Op Stad" onAction="#searchByCity"/>
+                <MenuItem mnemonicParsing="false" text="Op AanvraagType" onAction="#searchByType"/>
+                <MenuItem mnemonicParsing="false" text="Op Status" onAction="#searchByState"/>
+            </Menu>
         </MenuBar>
     </top>
 

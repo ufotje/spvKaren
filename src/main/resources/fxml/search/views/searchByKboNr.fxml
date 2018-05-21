@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="600.0" style="-fx-background-image: url('../../../images/ibz.jpg'); -fx-background-position: center;             -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.vigilis.controllers.search.SearchByKboNrController">
+
+    <top>
+        <VBox alignment="CENTER" style="-fx-background-color: transparrent; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+            <fx:include source="/fxml/menu.fxml" />
+            <BorderPane.margin>
+                <Insets top="5.0" />
+            </BorderPane.margin>
+        </VBox>
+    </top>
+
+    <center>
+        <TabPane minWidth="-Infinity" prefHeight="173.0" prefWidth="600.0" side="LEFT" tabClosingPolicy="UNAVAILABLE"
+                 BorderPane.alignment="CENTER">
+            <Tab closable="false" text="Algemeen">
+            <content>
+               <ScrollPane>
+                  <content>
+                     <TableView fx:id="table" editable="true">
+                       <columns>
+                           <TableColumn fx:id="languageCol" prefWidth="43.0" text="Taal" />
+                           <TableColumn fx:id="kboNrCol" prefWidth="91.0" text="KBO-Nummer" />
+                           <TableColumn fx:id="kboNameCol" prefWidth="102.0" text="KBO-Naam" />
+                         <TableColumn fx:id="applicationDateCol" prefWidth="103.0" text="Datum Aanvraag" />
+                         <TableColumn fx:id="typeCol" prefWidth="95.0" text="Type Aanvraag" />
+                           <TableColumn fx:id="notesCol" prefWidth="150.0" text="Opmerkingen" />
+                       </columns>
+                     </TableView>
+                  </content>
+               </ScrollPane>
+            </content>
+            </Tab>
+            <Tab closable="false" text="Adres">
+            <content>
+               <TableView prefHeight="200.0" prefWidth="200.0" fx:id="addressTable">
+                 <columns>
+                   <TableColumn fx:id="nameOrgCol" prefWidth="113.99998474121094" text="Naam" />
+                   <TableColumn fx:id="streetCol" prefWidth="160.0" text="Straat en nr" />
+                     <TableColumn fx:id="zipCol" prefWidth="53.0" text="Zip" />
+                     <TableColumn fx:id="cityCol" prefWidth="65.0" text="Stad" />
+                     <TableColumn fx:id="telCol" prefWidth="76.0" text="Telefoon" />
+                     <TableColumn fx:id="mailCol" prefWidth="103.0" text="E-Mail" />
+                 </columns>
+               </TableView>
+            </content>
+            </Tab>
+            <Tab text="Facturen">
+            <content>
+               <SplitPane>
+                  <items>
+                     <TableView fx:id="tableInv">
+                       <columns>
+                         <TableColumn fx:id="receivedCol" prefWidth="75.0" text="Ontvangst" />
+                         <TableColumn fx:id="confirmationCol" prefWidth="95.0" text="Bevestiging" />
+                           <TableColumn fx:id="stateCol" prefWidth="131.0" text="Status" />
+                           <TableColumn fx:id="documentCol" prefWidth="268.0" text="Documenten" />
+                       </columns>
+                     </TableView>
+                  </items>
+               </SplitPane>
+            </content></Tab>
+            <Tab text="Bijkomende Stukken" />
+            <Tab text="Advies" />
+            <Tab text="Besluit" />
+            <BorderPane.margin>
+                <Insets top="25.0" />
+            </BorderPane.margin>
+        </TabPane>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER" minWidth="-Infinity" opacity="0.5" prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: transparrent; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+            <fx:include source="/fxml/footer.fxml" />
+            <BorderPane.margin>
+                <Insets left="5.0" right="5.0" />
+            </BorderPane.margin>
+        </VBox>
+    </bottom>
+</BorderPane>
