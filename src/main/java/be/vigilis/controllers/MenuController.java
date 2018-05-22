@@ -1,6 +1,7 @@
 package be.vigilis.controllers;
 
 
+import be.vigilis.utility.sceneControl.ChangeScene;
 import be.vigilis.utility.sceneControl.NewStage;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
@@ -9,6 +10,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class MenuController {
     public static Stage stage;
+
+    @FXML
+    private void add(){
+        ChangeScene.init("/fxml/home.fxml", "Voeg een record toe!");
+    }
 
     @FXML
     private void updateByName() {
@@ -63,6 +69,12 @@ public class MenuController {
     @FXML
     private void searchByState() {
         stage = NewStage.getStage("Zoek een record op Status Aanvraag!", "/fxml/search/dialogs/searchByStateDialog.fxml");
+        stage.show();
+    }
+
+    @FXML
+    private void searchByLang() {
+        stage = NewStage.getStage("Zoek een record op Taal Aanvraag!", "/fxml/search/dialogs/searchByLangDialog.fxml");
         stage.show();
     }
 }

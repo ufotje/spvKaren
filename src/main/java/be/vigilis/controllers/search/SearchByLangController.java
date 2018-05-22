@@ -27,9 +27,9 @@ import static javafx.collections.FXCollections.observableArrayList;
 
 
 @Component
-public class SearchByTypeController {
+public class SearchByLangController {
     @FXML
-    private TextField type;
+    private TextField lang;
     @FXML
     private TableView<General> table;
     @FXML
@@ -75,8 +75,8 @@ public class SearchByTypeController {
     private GeneralRepo repo;
 
     @FXML
-    private void searchByType(){
-        ObservableList<General> generals = observableArrayList( repo.findByApplicationType(type.getText()));
+    private void searchLang(){
+        ObservableList<General> generals = observableArrayList( repo.findByLanguage(lang.getText()));
         ObservableList<Invoices> invoices = observableArrayList();
         ObservableList<Address> addresses = observableArrayList();
         if(!generals.isEmpty()){
@@ -85,13 +85,14 @@ public class SearchByTypeController {
                 addresses.add(g.getAddress());
             }
             MenuController.stage.close();
-            ChangeScene.init("/fxml/search/views/searchByType.fxml", "Lijst van bedrijven die een " + type.getText() + " aanvroegen.");
+            ChangeScene.init("/fxml/search/views/searchByLang.fxml", "Alle bedrijven die een  " +
+                    lang.getText() + " aanvraag indienden.");
             GeneralTable.init(table, languageCol, kboNrCol, kboNameCol, applicationDateCol, typeCol, notesCol, generals);
             AddressTable.init(addressTable, nameOrgCol, streetCol, zipCol, cityCol, telCol, mailCol, addresses);
             InvoiceTable.init(tableInv, receivedCol, confirmationCol, stateCol, documentCol, invoices);
             InvoiceRowFactory.set(tableInv);
         } else{
-            Warning.alert("Record Not found!", "Er werden geen bedrijven terug gevonden.");
+            Warning.alert("No Records found!", "Er werden geen bedrijven gevonden die voldoen aan de querry.");
         }
     }
 }

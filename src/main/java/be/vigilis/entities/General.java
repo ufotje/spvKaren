@@ -28,12 +28,15 @@ public class General {
     @JoinColumn(name = "id_invoices", referencedColumnName = "id")
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Invoices invoice;
+    @JoinColumn(name = "id_additional", referencedColumnName = "id")
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private Additional additional;
 
     public General() {
     }
 
     public General(String language, LocalDate application, String nameKbo, long kboNumber, Address address,
-                   String applicationType, String notes, Invoices invoice) {
+                   String applicationType, String notes, Invoices invoice, Additional additional) {
         this.language = language;
         this.application = application;
         this.nameKbo = nameKbo;
@@ -42,6 +45,7 @@ public class General {
         this.applicationType = applicationType;
         this.notes = notes;
         this.invoice = invoice;
+        this.additional = additional;
     }
 
     public Long getId() {
@@ -114,5 +118,13 @@ public class General {
 
     public void setInvoice(Invoices invoice) {
         this.invoice = invoice;
+    }
+
+    public Additional getAdditional() {
+        return additional;
+    }
+
+    public void setAdditional(Additional additional) {
+        this.additional = additional;
     }
 }

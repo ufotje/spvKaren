@@ -8,11 +8,12 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.File;
 import java.time.LocalDate;
+import java.util.List;
 
 public interface InvoiceTable {
     static void init(TableView<Invoices> table, TableColumn<Invoices, String> receivedCol,
                      TableColumn<Invoices, LocalDate> confirmationCol, TableColumn<Invoices, String> stateCol,
-                     TableColumn<Invoices, File> documentCol, ObservableList<Invoices> list){
+                     TableColumn<Invoices, List<File>> documentCol, ObservableList<Invoices> list){
         receivedCol.setCellValueFactory(new PropertyValueFactory<>("received"));
         confirmationCol.setCellValueFactory(new PropertyValueFactory<>("confirmationDate"));
         stateCol.setCellValueFactory(new PropertyValueFactory<>("state"));

@@ -6,7 +6,7 @@ import be.vigilis.entities.General;
 import be.vigilis.entities.Invoices;
 import be.vigilis.repositories.GeneralRepo;
 import be.vigilis.repositories.InvoiceRepo;
-import be.vigilis.utility.RowFactory;
+import be.vigilis.utility.rowFactories.InvoiceRowFactory;
 import be.vigilis.utility.sceneControl.ChangeScene;
 import be.vigilis.utility.tables.AddressTable;
 import be.vigilis.utility.tables.GeneralTable;
@@ -22,6 +22,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.time.LocalDate;
+import java.util.List;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
@@ -69,7 +70,7 @@ public class SearchByStateController {
     @FXML
     private TableColumn<Invoices, String> stateCol;
     @FXML
-    private TableColumn<Invoices, File> documentCol;
+    private TableColumn<Invoices, List<File>> documentCol;
 
     @Autowired
     private InvoiceRepo repo;
@@ -92,7 +93,7 @@ public class SearchByStateController {
             GeneralTable.init(table, languageCol, kboNrCol, kboNameCol, applicationDateCol, typeCol, notesCol, generals);
             AddressTable.init(addressTable, nameOrgCol, streetCol, zipCol, cityCol, telCol, mailCol, addresses);
             InvoiceTable.init(tableInv, receivedCol, confirmationCol, stateCol, documentCol, invoices);
-            RowFactory.set(tableInv);
+            InvoiceRowFactory.set(tableInv);
         } else{
             Warning.alert("Record Not found!", "Er werden geen resultaten gevonden.");
         }

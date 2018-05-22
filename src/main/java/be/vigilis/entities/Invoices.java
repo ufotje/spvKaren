@@ -3,6 +3,7 @@ package be.vigilis.entities;
 import javax.persistence.*;
 import java.io.File;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name="Invoices")
@@ -14,16 +15,17 @@ public class Invoices {
     private String received;
     private LocalDate confirmationDate;
     private String state;
-    private File file;
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<File> files;
 
     public Invoices() {
     }
 
-    public Invoices(String received, LocalDate confirmationDate, String state, File file) {
+    public Invoices(String received, LocalDate confirmationDate, String state, List<File> files) {
         this.received = received;
         this.confirmationDate = confirmationDate;
         this.state = state;
-        this.file = file;
+        this.files = files;
     }
 
     public Long getId() {
@@ -58,11 +60,11 @@ public class Invoices {
         this.state = state;
     }
 
-    public File getFile() {
-        return file;
+    public List<File> getFile() {
+        return files;
     }
 
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(List<File> files) {
+        this.files = files;
     }
 }

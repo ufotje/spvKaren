@@ -1,5 +1,6 @@
 package be.vigilis.controllers.save;
 
+import be.vigilis.entities.Additional;
 import be.vigilis.entities.Address;
 import be.vigilis.entities.General;
 import be.vigilis.entities.Invoices;
@@ -19,6 +20,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
@@ -33,7 +37,7 @@ public class SaveController {
     private TextField kboName, kboNr, type;
     @FXML
     private TextArea notes;
-    private File file;
+    private List<File> files = new ArrayList<>();
 
     //AddressFields
     @FXML
@@ -47,13 +51,18 @@ public class SaveController {
     @FXML
     private TextField state;
 
+    //AdditionFields
+    @FXML
+    private DatePicker receivedOn, experation, notification, requested, continuance, payed;
+    private List<File> additionalFiles = new ArrayList<>();
+
     //Repo's
     @Autowired
     @Qualifier("generalRepo")
     private GeneralRepo generalRepo;
 
     @FXML
-    public void initialize(){
+    public void initialize() {
         ObservableList<String> languages = observableArrayList("NL", "FR", "EN", "DE");
         language.setItems(languages);
         language.setValue(languages.get(0));
@@ -65,24 +74,33 @@ public class SaveController {
 
     @FXML
     private void save() {
-        Invoices invoice = new Invoices(received.getValue(), confirmation.getValue(), state.getText(), file);
-        Address address = new Address(nameOrg.getText(), street.getText(), zip.getText(), city.getText(), tel.getText(), mail.getText());
-        General general = new General(language.getValue(), applicationDate.getValue(), kboName.getText(), Long.valueOf(kboNr.getText()), address, type.getText(), notes.getText(), invoice);
-        if(generalRepo.save(general) != null){
+        Invoices invoice = new Invoices(received.getValue(), confirmation.getValue(), state.getText(), files);
+        Address address = new Address(nameOrg.getText(), street.getText(), zip.getText(), city.getText(), tel.getText(),
+                mail.getText());
+        Additional additional = new Additional(requested.getValue(), experation.getValue(), receivedOn.getValue(),
+                continuance.getValue(), notification.getValue(), additionalFiles, payed.getValue());
+        General general = new General(language.getValue(), applicationDate.getValue(), kboName.getText(),
+                Long.valueOf(kboNr.getText()), address, type.getText(), notes.getText(), invoice, additional);
+        if (generalRepo.save(general) != null) {
             Warning.alert("Save succeed", "Het record van " + kboName.getText() + " werd succesvol opgeslagen.");
             clearFields();
             ChangeScene.init("/fxml/home.fxml", "Vergunningen Camerabewaking");
-        } else{
+        } else {
             Warning.alert("Save Failed!", "Er ging iets fout tijdens het opslaan van het record.");
         }
     }
 
     @FXML
     public void chooseFile() {
-        file = FileSelector.chooseFile();
+        files.add(FileSelector.chooseFile());
     }
 
-    private void clearFields(){
+    @FXML
+    private void addDoc(){
+        additionalFiles.add(FileSelector.chooseFile());
+    }
+
+    private void clearFields() {
         applicationDate.setValue(null);
         kboName.clear();
         kboNr.clear();

@@ -2,34 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6e3477b-9e9d-4c24-b743-302d916f905b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNameController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByStateController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/InvoiceRepo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/RowFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/ShowInvoice.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AddressTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/GeneralTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/InvoiceTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByCityDialog.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNameDialog.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNrDialog.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByStateDialog.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByTypeDialog.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByKboName.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByKboNr.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByState.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByType.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByLangController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/entities/Additional.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/Printers.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/rowFactories/InvoiceRowFactory.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AdditionalTable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByLangDialog.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByLang.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/MenuController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/AddressRepo.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/AddressRepo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/save/SaveController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/save/SaveController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNameController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNameController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByStateController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByStateController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/update/UpdateController.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/update/UpdateController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/entities/General.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/entities/General.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/entities/Invoices.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/entities/Invoices.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/RowFactory.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/rowFactories/AdditionalRowFactory.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/ShowInvoice.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/ShowInvoice.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/InvoiceTable.java" afterPath="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/InvoiceTable.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/home.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/home.fxml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/menu.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/menu.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/home.fxml" afterPath="$PROJECT_DIR$/target/classes/fxml/home.fxml" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxml/menu.fxml" afterPath="$PROJECT_DIR$/target/classes/fxml/menu.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/search/views/searchByCity.fxml" afterPath="$PROJECT_DIR$/target/classes/fxml/search/views/searchByCity.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,114 +44,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SearchByCityController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchByCity.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="111" column="61" lean-forward="false" selection-start-line="111" selection-start-column="61" selection-end-line="111" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchByLangController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByLangController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SearchByStateController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByStateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="80" column="65" lean-forward="true" selection-start-line="80" selection-start-column="65" selection-end-line="80" selection-end-column="65" />
+            <state relative-caret-position="816">
+              <caret line="72" column="45" lean-forward="false" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/menu.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
+      <file leaf-file-name="SearchByTypeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="816">
+              <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchByStateDialog.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByStateDialog.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
+      <file leaf-file-name="SearchByKboNrController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+              <folding />
+            </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvoiceRowFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/rowFactories/InvoiceRowFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/MenuController.java">
+      <file leaf-file-name="AdditionalRowFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/rowFactories/AdditionalRowFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-466">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="20" column="74" lean-forward="false" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchByCityDialog.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByCityDialog.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
+      <file leaf-file-name="AdditionalTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AdditionalTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchByKboNameDialog.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNameDialog.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchByKboNameController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchByCityController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="80" column="27" lean-forward="false" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/repositories/AddressRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneralRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="245">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,47 +161,56 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/entities/General.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/delete/DeleteController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/update/updateByKboDialog.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/update/updateByNameDialog.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/delete/deleteByNameDialog.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/FileSelector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/entities/Invoices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/save/SaveController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/update/UpdateController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/update/update.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/home.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/search.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByName.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/updateByKboNrDialog.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/GeneralTable.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/searchByKboName.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/InvoiceTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/RowFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/ShowInvoice.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AddressTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/searchByKboNr.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByKboNr.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByKboName.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByState.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByType.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByTypeDialog.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/InvoiceRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByStateController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByStateDialog.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/menu.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/AddressRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByCityDialog.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNameDialog.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/update/UpdateController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/RowFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/entities/Invoices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/ShowInvoice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/entities/General.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByLangDialog.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByLang.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/entities/Additional.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/menu.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/Printer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/Printers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/save/SaveController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/home.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AdditionalTables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/InvoiceTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AdditionalTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/utility/rowFactories/AdditionalRowFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNameController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByLangController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByStateController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml" />
       </list>
     </option>
   </component>
@@ -257,6 +249,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,6 +355,35 @@
               <item name="spvKaren" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vigilis" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spvKaren" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spvKaren" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vigilis" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="rowFactories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spvKaren" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spvKaren" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vigilis" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="tables" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spvKaren" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spvKaren" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -407,16 +429,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="fxml" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="dialogs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spvKaren" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spvKaren" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -432,7 +444,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
@@ -456,15 +467,19 @@
       <recent name="C:\spvKaren\src\main\resources\fxml\search\dialogs" />
       <recent name="C:\spvKaren\src\main\resources\fxml\search\views" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.vigilis.utility.rowFactories" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.vigilis.utility.rowFactories" />
       <recent name="be.vigilis.controllers.search" />
       <recent name="be.vigilis.utility" />
       <recent name="be.vigilis.repositories" />
       <recent name="be.vigilis.entities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\spvKaren\src\main\resources\fxml\search\views" />
       <recent name="C:\spvKaren\src\main\resources\fxml\search\dialogs" />
+      <recent name="C:\spvKaren\src\main\resources\fxml\search\views" />
       <recent name="C:\spvKaren\src\main\resources\fxml\search" />
       <recent name="C:\spvKaren\src\main\resources\fxml\update" />
       <recent name="C:\spvKaren\src\main\resources\fxml\delete" />
@@ -598,14 +613,19 @@
       <workItem from="1526817030711" duration="4730000" />
       <workItem from="1526838162820" duration="27125000" />
       <workItem from="1526913293345" duration="18246000" />
+      <workItem from="1526973991504" duration="4680000" />
+      <workItem from="1526981135657" duration="4300000" />
+      <workItem from="1526987838915" duration="5294000" />
+      <workItem from="1526997590051" duration="808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51004000" />
+    <option name="totallyTimeSpent" value="66086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="11" width="1448" height="849" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -627,7 +647,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32971507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27094972" sideWeight="0.49190283" order="0" side_tool="false" content_ui="combo" />
@@ -655,75 +675,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNrDialog.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="139" lean-forward="false" selection-start-line="28" selection-start-column="139" selection-end-line="28" selection-end-column="139" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="35" lean-forward="false" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/save/SaveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="188" lean-forward="false" selection-start-line="66" selection-start-column="188" selection-end-line="66" selection-end-column="188" />
-          <folding>
-            <element signature="e#2782#2783#0" expanded="false" />
-            <element signature="e#2830#2831#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/General.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/delete/DeleteController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,14 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -754,41 +701,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-591">
           <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/update/updateByKboDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="129" lean-forward="false" selection-start-line="28" selection-start-column="129" selection-end-line="28" selection-end-column="129" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/update/updateByNameDialog.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/update/updateByNameDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/delete/deleteByNameDialog.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/delete/deleteByNameDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
@@ -800,51 +746,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/save/saveDialog.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/FileSelector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/save/SaveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="62" column="36" lean-forward="false" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
-          <folding>
-            <element signature="e#2782#2783#0" expanded="false" />
-            <element signature="e#2830#2831#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/update/UpdateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="128" column="5" lean-forward="false" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4781#4782#0" expanded="false" />
-            <element signature="e#4829#4830#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/update/update.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="288" column="38" lean-forward="false" selection-start-line="288" selection-start-column="38" selection-end-line="288" selection-end-column="38" />
@@ -853,103 +772,40 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/home.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="278" column="222" lean-forward="false" selection-start-line="278" selection-start-column="222" selection-end-line="278" selection-end-column="222" />
-          <folding />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByNameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/RowFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/ShowInvoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/InvoiceTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByNameController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AddressTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByKboNr.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNrDialog.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNrDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="28" column="139" lean-forward="false" selection-start-line="28" selection-start-column="139" selection-end-line="28" selection-end-column="139" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByKboName.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="15" column="108" lean-forward="false" selection-start-line="15" selection-start-column="108" selection-end-line="15" selection-end-column="108" />
@@ -958,11 +814,11 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByState.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByState.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
@@ -971,19 +827,11 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByType.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByType.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
@@ -992,59 +840,59 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByTypeDialog.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByTypeDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="23" column="82" lean-forward="false" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="86" column="132" lean-forward="false" selection-start-line="86" selection-start-column="132" selection-end-line="86" selection-end-column="132" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/General.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/Invoices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-          <folding />
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/GeneralTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByStateDialog.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/repositories/AddressRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNameDialog.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/update/UpdateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="135" column="20" lean-forward="false" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1052,100 +900,228 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/Invoices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/ShowInvoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="81" column="41" lean-forward="false" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/General.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="122" column="39" lean-forward="false" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByLangDialog.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="183" lean-forward="false" selection-start-line="11" selection-start-column="183" selection-end-line="11" selection-end-column="183" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByLang.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="105" lean-forward="false" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1526977472588" expanded="true" signature="554:714" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="65" lean-forward="false" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+          <folding>
+            <element signature="e#342#343#0" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/Printers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="101" lean-forward="false" selection-start-line="14" selection-start-column="101" selection-end-line="14" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/menu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="84" lean-forward="false" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/save/SaveController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="349">
+          <caret line="76" column="99" lean-forward="true" selection-start-line="76" selection-start-column="99" selection-end-line="76" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByCityDialog.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/home.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="348" column="98" lean-forward="false" selection-start-line="348" selection-start-column="98" selection-end-line="348" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/entities/Additional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/InvoiceTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByStateDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/rowFactories/InvoiceRowFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/rowFactories/AdditionalRowFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="74" lean-forward="false" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByLangController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByStateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="80" column="65" lean-forward="true" selection-start-line="80" selection-start-column="65" selection-end-line="80" selection-end-column="65" />
+        <state relative-caret-position="816">
+          <caret line="72" column="45" lean-forward="false" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/repositories/AddressRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="816">
+          <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/MenuController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNrController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="816">
+          <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/utility/tables/AdditionalTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="80" column="27" lean-forward="false" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByCityDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/dialogs/searchByKboNameDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/repositories/GeneralRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="245">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByKboNameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/search/views/searchByCity.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="111" column="61" lean-forward="false" selection-start-line="111" selection-start-column="61" selection-end-line="111" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/vigilis/controllers/search/SearchByCityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -29,8 +29,12 @@ public interface GeneralRepo extends JpaRepository<General, Long> {
     List<General> findByAddress(Address address);
 
     @Transactional
+    List<General> findByLanguage(String language);
+
+    @Transactional
     int deleteByKboNumber(long kboNumber);
 
     @Transactional
     int deleteByNameKbo(String nameKbo);
+
 }

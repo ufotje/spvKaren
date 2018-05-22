@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.util.List;
 
 @Component
 public class UpdateController {
@@ -50,7 +51,7 @@ public class UpdateController {
 
     @Autowired
     private GeneralRepo repo;
-    private File file;
+    private List<File> files;
     private General g;
     private Address a;
     private Invoices inv;
@@ -132,7 +133,7 @@ public class UpdateController {
         inv.setConfirmationDate(confirmation.getValue());
         inv.setReceived(received.getValue());
         inv.setState(state.getText());
-        inv.setFile(file);
+        inv.setFile(files);
     }
 
     private void updateGeneral() {
@@ -148,6 +149,6 @@ public class UpdateController {
 
     @FXML
     public void chooseFile() {
-        file = FileSelector.chooseFile();
+        files.add(FileSelector.chooseFile());
     }
 }

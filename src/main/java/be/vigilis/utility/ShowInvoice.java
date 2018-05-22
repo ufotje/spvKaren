@@ -79,7 +79,7 @@ public class ShowInvoice {
         b.setOnAction((event) -> window.close());
         vBox.getChildren().add(b);
         pane.setContent(vBox);
-        window.setTitle("Selected Contract!");
+        window.setTitle("Selected Invoice!");
         window.setScene(scene);
         window.show();
     }
