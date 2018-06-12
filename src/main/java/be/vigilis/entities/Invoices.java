@@ -1,5 +1,8 @@
 package be.vigilis.entities;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
 import java.io.File;
 import java.time.LocalDate;
@@ -17,15 +20,19 @@ public class Invoices {
     private String state;
     @ElementCollection(fetch = FetchType.EAGER)
     private List<File> files;
+    @ElementCollection
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<File> filesNow;
 
     public Invoices() {
     }
 
-    public Invoices(String received, LocalDate confirmationDate, String state, List<File> files) {
+    public Invoices(String received, LocalDate confirmationDate, String state, List<File> files, List<File> filesNow) {
         this.received = received;
         this.confirmationDate = confirmationDate;
         this.state = state;
         this.files = files;
+        this.filesNow = filesNow;
     }
 
     public Long getId() {
@@ -66,5 +73,21 @@ public class Invoices {
 
     public void setFile(List<File> files) {
         this.files = files;
+    }
+
+    public List<File> getFiles() {
+        return files;
+    }
+
+    public void setFiles(List<File> files) {
+        this.files = files;
+    }
+
+    public List<File> getFilesNow() {
+        return filesNow;
+    }
+
+    public void setFilesNow(List<File> filesNow) {
+        this.filesNow = filesNow;
     }
 }

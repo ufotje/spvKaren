@@ -1,17 +1,14 @@
 package be.vigilis.controllers.search;
 
-import be.vigilis.controllers.MenuController;
 import be.vigilis.entities.Additional;
 import be.vigilis.entities.Address;
 import be.vigilis.entities.General;
 import be.vigilis.entities.Invoices;
-import be.vigilis.repositories.AddressRepo;
 import be.vigilis.repositories.GeneralRepo;
 import be.vigilis.utility.Printers;
 import be.vigilis.utility.converters.NodesList;
 import be.vigilis.utility.rowFactories.AdditionalRowFactory;
 import be.vigilis.utility.rowFactories.InvoiceRowFactory;
-import be.vigilis.utility.sceneControl.ChangeScene;
 import be.vigilis.utility.tables.AdditionalTable;
 import be.vigilis.utility.tables.AddressTable;
 import be.vigilis.utility.tables.GeneralTable;
@@ -22,7 +19,6 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -33,11 +29,8 @@ import java.util.List;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
-
 @Component
-public class SearchByCityController {
-    @FXML
-    private TextField city;
+public class SearchAllController {
     @FXML
     private TableView<General> table;
     @FXML
@@ -82,56 +75,40 @@ public class SearchByCityController {
     @FXML
     private TableView<Additional> additionalTable;
     @FXML
-    private TableColumn<Additional, LocalDate> requestedCol;
-    @FXML
-    private TableColumn<Additional, LocalDate> expirationCol;
-    @FXML
-    private TableColumn<Additional, LocalDate> receivedOnCol;
-    @FXML
-    private TableColumn<Additional, LocalDate> continuanceCol;
-    @FXML
-    private TableColumn<Additional, LocalDate> notificationCol;
+    private TableColumn<Additional, LocalDate> requestedCol, expirationCol, receivedOnCol, continuanceCol,
+            notificationCol, payedCol;
     @FXML
     private TableColumn<Additional, List<File>> missingCol;
-    @FXML
-    private TableColumn<Additional, LocalDate> payedCol;
 
     @Autowired
     private GeneralRepo repo;
-    @Autowired
-    private AddressRepo aRepo;
 
     @FXML
-    private void searchCity(){
-        ObservableList<General> generals = observableArrayList();
+    public void initialize() {
+        ObservableList<General> generals = observableArrayList(repo.findAll());
         ObservableList<Invoices> invoices = observableArrayList();
-        ObservableList<Address> addresses = observableArrayList(aRepo.findByCity(city.getText()));
+        ObservableList<Address> addresses = observableArrayList();
         ObservableList<Additional> additionals = observableArrayList();
-        if(!addresses.isEmpty()){
-            for(Address a : addresses){
-                List<General> g = repo.findByAddress(a);
-                for(General ge : g){
-                    generals.add(ge);
-                    invoices.add(ge.getInvoice());
-                    additionals.add(ge.getAdditional());
-                }
+        if (!generals.isEmpty()) {
+            for (General g : generals) {
+                invoices.add(g.getInvoice());
+                addresses.add(g.getAddress());
+                additionals.add(g.getAdditional());
             }
-            MenuController.stage.close();
-            ChangeScene.init("/fxml/search/views/searchByCity.fxml", "Alle bedrijven gevestigd in " + city.getText());
             GeneralTable.init(table, languageCol, kboNrCol, kboNameCol, applicationDateCol, typeCol, notesCol, generals);
             AddressTable.init(addressTable, nameOrgCol, streetCol, zipCol, cityCol, telCol, mailCol, addresses);
             InvoiceTable.init(tableInv, receivedCol, confirmationCol, stateCol, documentCol, invoices);
-            AdditionalTable.init(additionalTable, receivedOnCol, requestedCol, notificationCol, expirationCol,
-                    continuanceCol, payedCol, missingCol, additionals);
+            AdditionalTable.init(additionalTable, receivedOnCol, notificationCol, expirationCol, payedCol, requestedCol,
+                    continuanceCol, missingCol, additionals);
             InvoiceRowFactory.set(tableInv);
             AdditionalRowFactory.set(additionalTable);
-        } else{
-            Warning.alert("No Records found!", "Er werden geen bedrijven gevonden die gevestigd zijn in " + city.getText());
+        } else {
+            Warning.alert("No Records found!", "Er werden geen records terug gevonden.");
         }
     }
 
     @FXML
-    private void printPage(){
+    private void printPage() {
         Printers.print(NodesList.make(table, addressTable, tableInv, additionalTable));
     }
 }

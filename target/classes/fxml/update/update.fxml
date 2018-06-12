@@ -15,10 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-            prefWidth="600.0" style="-fx-background-image: url('images/ibz.jpg'); -fx-background-position: center;
-            -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.vigilis.controllers.update.UpdateController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-image: url('images/ibz.jpg'); -fx-background-position: center;             -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.vigilis.controllers.update.UpdateController">
 
     <top>
         <VBox alignment="CENTER" style="-fx-background-color: transparrent; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
@@ -139,8 +136,7 @@
                               <Insets top="30.0" />
                            </VBox.margin>
                            <children>
-                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="37.0" prefWidth="93.0"
-                                      style="-fx-background-radius: 10;" text="Update" onAction="#update" textAlignment="CENTER">
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#update" prefHeight="37.0" prefWidth="93.0" style="-fx-background-radius: 10;" text="Update" textAlignment="CENTER">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -182,8 +178,7 @@
                             </HBox.margin>
                         </TextField>
                     </HBox>
-                    <Button alignment="CENTER" layoutX="212.0" layoutY="428.0" mnemonicParsing="false" onAction="#update"
-                            prefHeight="31.0" prefWidth="112.0" style="-fx-background-radius: 10;" text="Save" textAlignment="CENTER">
+                    <Button alignment="CENTER" layoutX="212.0" layoutY="428.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="112.0" style="-fx-background-radius: 10;" text="Save" textAlignment="CENTER">
                         <font>
                             <Font size="15.0" />
                         </font>
@@ -281,7 +276,7 @@
                                     <Insets left="30.0" top="20.0" />
                                  </HBox.margin>
                               </Label>
-                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" style="-fx-background-radius: 10;" text="Document Toevoegen" textAlignment="CENTER" onAction="#chooseFile">
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#chooseFile" prefHeight="25.0" prefWidth="156.0" style="-fx-background-radius: 10;" text="Document Toevoegen" textAlignment="CENTER">
                                  <HBox.margin>
                                     <Insets left="20.0" top="20.0" />
                                  </HBox.margin>
@@ -293,8 +288,7 @@
                         </HBox>
                         <HBox>
                            <children>
-                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#update" prefHeight="37.0"
-                                      prefWidth="117.0" style="-fx-background-radius: 10;" text="Save" textAlignment="CENTER">
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#update" prefHeight="37.0" prefWidth="117.0" style="-fx-background-radius: 10;" text="Save" textAlignment="CENTER">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -312,7 +306,103 @@
                </children></AnchorPane>
             </Tab>
             <Tab text="Bijkomende Stukken">
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="502.0" prefWidth="527.0">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label style="-fx-background-color: white;" text="Aangevraagd op: ">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="requested" prefHeight="25.0" prefWidth="127.0" />
+                              <Label layoutX="40.0" layoutY="14.0" style="-fx-background-color: white;" text="Vervaldatum: ">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="experation" layoutX="154.0" layoutY="10.0" prefHeight="25.0" prefWidth="132.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="30.0">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label style="-fx-background-color: white;" text="Ontvangen op: ">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="receivedOn" prefHeight="25.0" prefWidth="127.0">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </DatePicker>
+                              <Label layoutX="40.0" layoutY="14.0" style="-fx-background-color: white;" text="Ontbrekende stukken:">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#addDoc" prefHeight="25.0" prefWidth="86.0" style="-fx-background-radius: 10;" text="Voeg Toe" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="85.0">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label style="-fx-background-color: white;" text="Voortzetting:">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="continuance" prefHeight="25.0" prefWidth="127.0">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </DatePicker>
+                              <Label layoutX="40.0" layoutY="14.0" style="-fx-background-color: white;" text="Notificatie:">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="notification" prefHeight="25.0" prefWidth="144.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="220.0">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label style="-fx-background-color: white;" text="Dosierkosten Betaald:">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="payed" prefHeight="25.0" prefWidth="193.0">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </DatePicker>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#update" prefHeight="37.0" prefWidth="165.0" text="Safe" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets top="150.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
             </Tab>
             <Tab text="Advies">
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />

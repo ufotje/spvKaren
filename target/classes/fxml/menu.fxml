@@ -23,12 +23,17 @@
                 <MenuItem mnemonicParsing="false" text="Op KBO-Nummer" onAction="#deleteByKbo"/>
             </Menu>
             <Menu mnemonicParsing="false" text="Zoeken">
+                <MenuItem mnemonicParsing="false"  text="Alle" onAction="#searchAll"/>
                 <MenuItem mnemonicParsing="false"  text="Op Naam" onAction="#searchByKboName"/>
                 <MenuItem mnemonicParsing="false" text="Op KBO-Nummer" onAction="#searchByKboNr"/>
                 <MenuItem mnemonicParsing="false" text="Op Stad" onAction="#searchByCity"/>
                 <MenuItem mnemonicParsing="false" text="Op AanvraagType" onAction="#searchByType"/>
                 <MenuItem mnemonicParsing="false" text="Op Status" onAction="#searchByState"/>
                 <MenuItem mnemonicParsing="false" text="Op Taal" onAction="#searchByLang"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Mails">
+                <MenuItem mnemonicParsing="false"  text="Missende Stukken" onAction="#mailMissing"/>
+                <MenuItem mnemonicParsing="false" text="Herrineringen" onAction="#mailOverdue"/>
             </Menu>
         </MenuBar>
     </top>

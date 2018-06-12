@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.vigilis.controllers.save.SaveController">
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="550.0">
+            <HBox alignment="CENTER">
+                  <Label style="-fx-background-color: white;" text="Naam:" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="nameEmp" prefHeight="25.0" prefWidth="331.0" />
+               <VBox.margin>
+                  <Insets bottom="30.0" top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="196.0">
+                  <Label style="-fx-background-color: white;" text="RijksregisterNr:" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="rr" prefHeight="25.0" prefWidth="280.0" />
+            </HBox>
+            <HBox alignment="CENTER">
+                  <Label style="-fx-background-color: white;" text="Fie: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="fieBegin" promptText="BeginDatum" />
+                  <DatePicker fx:id="fieEnd" promptText="EindDatum">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               <VBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="238.0">
+                  <Label style="-fx-background-color: white;" text="SR: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#addSr" prefHeight="25.0" prefWidth="138.0" style="-fx-background-radius: 10;" text="Add" />
+                  <Label layoutX="180.0" layoutY="13.0" style="-fx-background-color: white;" text="VO:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button  mnemonicParsing="false" onAction="#addVo" prefHeight="25.0" prefWidth="140.0" style="-fx-background-radius: 10;" text="Add" />
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="170.0">
+                  <Label style="-fx-background-color: white;" text="Opleiding:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="educ" prefHeight="25.0" prefWidth="128.0" />
+                  <Label layoutX="204.0" layoutY="13.0" style="-fx-background-color: white;" text="IFK:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="ifk" prefHeight="25.0" prefWidth="115.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#angCheck" prefWidth="150" style="-fx-background-radius: 10;" text="Save" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="30.0" top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+      </VBox>
+</AnchorPane>

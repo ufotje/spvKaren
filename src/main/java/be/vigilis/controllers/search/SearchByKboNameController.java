@@ -1,6 +1,7 @@
 package be.vigilis.controllers.search;
 
 import be.vigilis.controllers.MenuController;
+import be.vigilis.entities.Additional;
 import be.vigilis.entities.Address;
 import be.vigilis.entities.General;
 import be.vigilis.entities.Invoices;
@@ -79,10 +80,12 @@ public class SearchByKboNameController {
         ObservableList<General> generals = observableArrayList( repo.findByNameKbo(kboName.getText()));
         ObservableList<Invoices> invoices = observableArrayList();
         ObservableList<Address> addresses = observableArrayList();
+        ObservableList<Additional> additionals = observableArrayList();
         if(!generals.isEmpty()){
             for(General g : generals){
                 invoices.add(g.getInvoice());
                 addresses.add(g.getAddress());
+                additionals.add(g.getAdditional());
             }
             MenuController.stage.close();
             ChangeScene.init("/fxml/search/views/searchByKboName.fxml", "Het Bedrijf met KBO-Benaming: " + kboName.getText());

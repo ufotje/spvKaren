@@ -1,7 +1,10 @@
 package be.vigilis.entities;
 
 import javax.persistence.*;
+import java.io.File;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "General")
@@ -16,7 +19,7 @@ public class General {
     private LocalDate application;
     @Column(name = "KboName", unique = true)
     private String nameKbo;
-    @Column(name = "KboNumber", unique = true)
+    @Column(name = "KboNumber")
     private long kboNumber;
     @JoinColumn(name = "id_address", referencedColumnName = "id")
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
@@ -31,12 +34,16 @@ public class General {
     @JoinColumn(name = "id_additional", referencedColumnName = "id")
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Additional additional;
+    @ElementCollection(fetch = FetchType.LAZY)
+    private List <Employee> employees = new ArrayList();
+    private File appendix1;
 
     public General() {
     }
 
     public General(String language, LocalDate application, String nameKbo, long kboNumber, Address address,
-                   String applicationType, String notes, Invoices invoice, Additional additional) {
+                   String applicationType, String notes, Invoices invoice, Additional additional, List<Employee> employees,
+                   File apendix1) {
         this.language = language;
         this.application = application;
         this.nameKbo = nameKbo;
@@ -46,6 +53,8 @@ public class General {
         this.notes = notes;
         this.invoice = invoice;
         this.additional = additional;
+        this.employees = employees;
+        this.appendix1 = apendix1;
     }
 
     public Long getId() {
@@ -126,5 +135,21 @@ public class General {
 
     public void setAdditional(Additional additional) {
         this.additional = additional;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+
+    public File getAppendix1() {
+        return appendix1;
+    }
+
+    public void setAppendix1(File appendix1) {
+        this.appendix1 = appendix1;
     }
 }

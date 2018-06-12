@@ -13,6 +13,8 @@ public class Address {
     private Long id;
     @Column(name = "OrgName", unique = true)
     private String nameOrg;
+    private String contactPersonName;
+    private String contactPersonRole;
     private String streetAndNumber;
     private String zip;
     private String city;
@@ -26,13 +28,15 @@ public class Address {
     }
 
     public Address(String nameOrg, String streetAndNumber, String zip, String city, String telephone,
-                   @Email(message = "*Please provide a valid Email") String email) {
+                   @Email(message = "*Please provide a valid Email") String email, String contactPersonName, String contactPersonRole) {
         this.nameOrg = nameOrg;
         this.streetAndNumber = streetAndNumber;
         this.zip = zip;
         this.city = city;
         this.telephone = telephone;
         this.email = email;
+        this.contactPersonName = contactPersonName;
+        this.contactPersonRole = contactPersonRole;
     }
 
     public Long getId() {
@@ -89,5 +93,22 @@ public class Address {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+
+    public String getContactPersonName() {
+        return contactPersonName;
+    }
+
+    public void setContactPersonName(String contactPersonName) {
+        this.contactPersonName = contactPersonName;
+    }
+
+    public String getContactPersonRole() {
+        return contactPersonRole;
+    }
+
+    public void setContactPersonRole(String contactPersonRole) {
+        this.contactPersonRole = contactPersonRole;
     }
 }

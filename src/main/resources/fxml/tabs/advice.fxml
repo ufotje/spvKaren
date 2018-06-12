@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="be.vigilis.controllers.save.SaveController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="550.0">
+         <children>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label style="-fx-background-color: white;" text="Staatsveiligheid: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="requestedSv" prefHeight="25.0" prefWidth="169.0" promptText="Aanvraag">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="recievedSv" prefHeight="25.0" prefWidth="169.0" promptText="Ontvangst">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="60.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-background-color: white;" text="Procureur (PDK): ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="requestedPdk" prefHeight="25.0" prefWidth="169.0" promptText="Aanvraag">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="recievedPdk" prefHeight="25.0" prefWidth="169.0" promptText="Ontvangst">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="125.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-background-color: white;" text="Uittreksels CSR: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="csr" prefHeight="25.0" prefWidth="169.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="save" alignment="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="137.0"
+                          style="-fx-background-radius: 10;" text="Save" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

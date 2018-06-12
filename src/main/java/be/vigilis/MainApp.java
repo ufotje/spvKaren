@@ -39,7 +39,7 @@ public class MainApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         stage = primaryStage;
-        stage.setTitle("SPV-Karen");
+        stage.setTitle("Aanvraag Vergunning Camera");
         Image icon = new Image(getClass().getResourceAsStream("/images/ibz.jpg"));
         stage.getIcons().add(icon);
         stage.setScene(new Scene(root, 600, 600));
